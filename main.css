@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Light-Grayish-Blue);
+    padding: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding-right: 25px;
+    background: #fff;
+    border-radius: 10px;
+    width: 725px;
+    height: 285px;
+    overflow: hidden;
+}
+.hero-img img{
+    width: 285px;
+    height: 285px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    gap: 20px;
+}
+.hero-text h3{
+    /* text-align: left; */
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Manrope;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.hero-text p{
+    font-size: 13px;
+    color: var(--Desaturated-Dark-Blue);
+    font-family: Manrope;
+}
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.person .person-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.person .person-text h6{
+    font-size: 13px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-family: Manrope;
+    font-weight: 700;
+}
+.person .person-text p{
+    font-size: 12px;
+    font-family: Manrope;
+    color: var(--Desaturated-Dark-Blue);
+}
+.person .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 120px;
+    align-items: center;
+    justify-content: center;
+    background: var(--Light-Grayish-Blue);
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        align-items: unset;
+        flex-direction: column;
+        gap: 0px;
+        padding-right: 0px;
+        width: 311px;
+        height: 555px;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    .hero-img img{
+        width: 311px;
+        height: 250px;
+    }
+    body{
+        padding: 50px 0;
+    }
+    .hero-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+        
+    }
+    .hero-text h3{
+        margin-top: 0px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Manrope;
+        color: var(--Very-Dark-Grayish-Blue);
+    }
+    .hero-text p{
+        font-size: 14px;
+        color: var(--Desaturated-Dark-Blue);
+        font-family: Manrope;
+    }
+    .person {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .person .person-img img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .person .person-text h6{
+        font-size: 14px;
+        color: var(--Very-Dark-Grayish-Blue);
+        font-family: Manrope;
+        font-weight: 700;
+    }
+    .person .person-text p{
+        font-size: 12px;
+        font-family: Manrope;
+        color: var(--Desaturated-Dark-Blue);
+    }
+    .person .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        padding: 0px 10px 4px ;
+        justify-content: center;
+        background: var(--Light-Grayish-Blue);
+    }
+    
+
+    
+}
+
+
+
