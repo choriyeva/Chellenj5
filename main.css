@@ -16,8 +16,43 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: var(--Light-Grayish-Blue);
-    padding: 100px;
+    /* padding: 100px; */
+}
+.share{
+    display: flex;
+    flex-direction: column;
+}
+.share-shakl{
+    background: var(--Very-Dark-Grayish-Blue);
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 170px;
+    left: 1057px;
+}
+.share-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 260px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 144px;
+    left: 954px;
+    background: var(--Very-Dark-Grayish-Blue);
+}
+.share-card h6{
+    color: var(--Grayish-Blue);
+    font-family: Manrope;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
 }
 .container{
     display: flex;
